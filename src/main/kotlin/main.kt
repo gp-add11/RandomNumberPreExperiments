@@ -3,12 +3,22 @@ import kotlin.math.pow
 
 fun main(args: Array<String>) {
     println("Hello World!")
-    printRandomNumber();
+    printRandomNumber()
 }
 
 fun printRandomNumber() {
     print("Enter complexity: ")
-    val largestNumber = 10.0.pow(2).toInt()
-    val randomNumber: Int = Random.nextInt(0,largestNumber)
-    println("Random number in the given range in $randomNumber")
+    //println("Input received is ${readlnInt()}")
+    val largestNumber: Int = 10.0.pow(readLnInt()).toInt()
+
+    while(true) {
+        val multiplicand: Int = Random.nextInt(0, largestNumber)
+        val multiplier: Int = Random.nextInt(0, largestNumber)
+        print("$multiplicand x $multiplier = ")
+
+        if (readLnInt() == multiplicand * multiplier) println("Correct!")
+        else println("Wrong! Correct answer is ${multiplicand * multiplier}")
+    }
 }
+
+private fun readLnInt() = readLine()!!.toInt()

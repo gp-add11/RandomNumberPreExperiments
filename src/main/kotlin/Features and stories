@@ -4,9 +4,10 @@
     1.3: Generate 2 random numbers in using 1.2 amd print them
     1.4: Get user input on product of numbers in 1.3
     1.5: Compare user input against real mathematical product
-    1.6: Print output
+    1.6: Print result
     1.7: Calculate and print score instead of just 1.6
     1.8: Loop infinitely until user aborts
+    1.9: Part 1.8 can be done via try-catch. If user types text then abort, else continue
 
 2: Sum-Product of chain of single-digit numbers
     2.1: Create a function to get user input for complexity (=length of chain)
