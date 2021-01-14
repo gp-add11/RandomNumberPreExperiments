@@ -18,7 +18,7 @@ fun printRandomNumber() {
 
         if (readLnInt() == multiplicand * multiplier) println("Correct!")
         else println("Wrong! Correct answer is ${multiplicand * multiplier}")
-    }
+}
 }
 
 private fun readLnInt() = readLine()!!.toInt()
